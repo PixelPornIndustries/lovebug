@@ -7,7 +7,7 @@ const mixers = [];
 const DRACO_PATH = 'https://www.gstatic.com/draco/versioned/decoders/1.5.5/';
 
 const MODEL_PATH =
-  [ { fileName: 'cicada.glb' }]; 
+  [ { fileName: 'cicadaNew4-v1.glb' }]; 
 
 let loadedModels = [];
 
@@ -193,7 +193,7 @@ function getClipStartTime(index) {
   });
 };
 
- load3DModels = (list, destination, path = "/models/") => { /*  <<<--- Change this file path to your models current path */
+ load3DModels = (list, destination, path = "/lovebug-main/models/") => { /*  <<<--- Change this file path to your models current path */
     let promises = [];
 
     for (let j in list) {
