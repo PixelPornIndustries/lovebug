@@ -37,7 +37,7 @@ let loadedModels = [];
         pmremGenerator.compileEquirectangularShader();
         
         const nightTexture = new THREE.RGBELoader()
-				.setPath('lovebug/skybox/') /* <<<--- Change this path to your file path */
+				.setPath('/skybox/') /* <<<--- Change this path to your file path */
 				.load('moonless_golf_1k.hdr', function(texture){
 					nightTexture.mapping = THREE.EquirectangularReflectionMapping;
 				   envMap = pmremGenerator.fromEquirectangular(texture).texture;
@@ -193,7 +193,7 @@ function getClipStartTime(index) {
   });
 };
 
- load3DModels = (list, destination, path = "/lovebug-main/models/") => { /*  <<<--- Change this file path to your models current path */
+ load3DModels = (list, destination, path = "/models/") => { /*  <<<--- Change this file path to your models current path */
     let promises = [];
 
     for (let j in list) {
