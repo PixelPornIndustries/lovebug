@@ -193,7 +193,7 @@ function getClipStartTime(index) {
   });
 };
 
- load3DModels = (list, destination, path = "/lovebug-main/models/") => { /*  <<<--- Change this file path to your models current path */
+ load3DModels = (list, destination, path = "/lovebug/models/") => { /*  <<<--- Change this file path to your models current path */
     let promises = [];
 
     for (let j in list) {
