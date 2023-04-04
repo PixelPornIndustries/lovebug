@@ -37,7 +37,7 @@ let loadedModels = [];
         pmremGenerator.compileEquirectangularShader();
         
         const nightTexture = new THREE.RGBELoader()
-				.setPath('skybox/') /* <<<--- Change this path to your file path */
+				.setPath('lovebug/skybox/') /* <<<--- Change this path to your file path */
 				.load('moonless_golf_1k.hdr', function(texture){
 					nightTexture.mapping = THREE.EquirectangularReflectionMapping;
 				   envMap = pmremGenerator.fromEquirectangular(texture).texture;
