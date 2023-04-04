@@ -150,7 +150,7 @@ loadModelFile = (fileName, path) => {
           clearcoatRoughness: 0.39,
           depthTest: true,
           depthWrite: true,
-	  blending: THREE.AdditiveBlending
+	  blending: THREE.MultiplyBlending
         });
       }
     });
